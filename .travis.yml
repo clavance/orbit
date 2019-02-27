@@ -5,13 +5,12 @@ node_js:
   - '11'
 install:
   - npm install -g truffle
-  - npm install -g coveralls
   - npm install -g ganache-cli
   - npm install
 script:
   - ganache-cli -p 7545 > /dev/null &
   - sleep 5
   - truffle migrate
-  - truffle test
+  - npm test
 after_script:
   - npm run coverage && cat coverage/lcov.info | coveralls

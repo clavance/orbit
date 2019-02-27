@@ -8,6 +8,6 @@ install:
   - npm install -g ganache-cli
   - npm install
 script:
-  - npm ganache
-  - npm test
+  - ganache-cli -p 7545
+  - truffle test
   - npm run coverage && cat coverage/lcov.info | coveralls

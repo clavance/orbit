@@ -6,8 +6,7 @@
   "directories": {
   },
   "scripts": {
-    //"test": "echo \"Error: no test specified\" && exit 1"
-    "coverage": "./node_modules/.bin/solidity-coverage"
+    "coverage": "/Users/apple/Desktop/Node/node_modules/.bin/solidity-coverage"
     "ganache": "ganache-cli -p 7545",
     "test": "truffle test",
   },

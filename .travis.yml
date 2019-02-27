@@ -6,6 +6,8 @@ node_js:
 install:
   - npm install -g truffle
   - npm install -g ganache-cli
+  - npm install --save-dev coveralls
+  - npm install --save-dev solidity-coverage
   - npm install
 script:
   - ganache-cli -p 7545 > /dev/null &

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "truffle test",
-    "coverage": "Users/apple/desktop/Node/node_modules/.bin/solidity-coverage"
+    "coverage": "./node_modules/.bin/solidity-coverage"
   },
   "repository": {
     "type": "git",

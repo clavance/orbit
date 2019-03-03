@@ -64,11 +64,13 @@ contract('DexToken', function(accounts) {
 	it('updates address balances on token transfer', function() {
 	return DexToken.deployed().then(function(instance) {
 		tokenInstance = instance;
+		});
 	});
 
 	it('emits Transfer event on transfer function call', function() {
 	return DexToken.deployed().then(function(instance) {
 		tokenInstance = instance;
+		});
 	});
 
 
@@ -96,24 +98,28 @@ contract('DexToken', function(accounts) {
 	it('emits Approval event on approval function call', function() {
 	return DexToken.deployed().then(function(instance) {
 		tokenInstance = instance;
+		});
 	});
 
 
 	it('logs account authorising third party token transfer', function() {
 	return DexToken.deployed().then(function(instance) {
 		tokenInstance = instance;
+		});
 	});
 
 
 	it('logs account being authorised for transferFrom function call', function() {
 	return DexToken.deployed().then(function(instance) {
 		tokenInstance = instance;
+		});
 	});
 
 
 	it('checks that transfer amount matches authorisation', function() {
 	return DexToken.deployed().then(function(instance) {
 		tokenInstance = instance;
+		});
 	});
 
 

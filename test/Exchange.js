@@ -28,26 +28,31 @@ contract('Exchange', function(accounts) {
 	it('checks amounts being traded are correct', function() {
 	return Exchange.deployed().then(function(instance) {
 		exchangeInstance = instance;
+		});
 	});
 
 	it('checks price of tokens traded', function() {
 	return Exchange.deployed().then(function(instance) {
 		exchangeInstance = instance;
+		});
 	});
 
 	it('checks token sale reduces seller balance', function() {
 	return Exchange.deployed().then(function(instance) {
 		exchangeInstance = instance;
+		});
 	});
 
 	it('checks token purchase increases buyer\'s balance)', function() {
 	return Exchange.deployed().then(function(instance) {
 		exchangeInstance = instance;
+		});
 	});
 
 	it('checks transfer event emitted)', function() {
 	return Exchange.deployed().then(function(instance) {
-	exchangeInstance = instance;
+		exchangeInstance = instance;
+		});
 	});
 
 

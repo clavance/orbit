@@ -30,7 +30,7 @@ contract('DexToken', function(accounts) {
 		});
 	});
 
-	it('transfers tokens from sender to receiver, updates balances and triggers Transfer event', function() {
+	it('transfers tokens from sender to receiver', function() {
 		return DexToken.deployed().then(function(instance) {
 			tokenInstance = instance;
 			//test 'require' statement
@@ -61,6 +61,17 @@ contract('DexToken', function(accounts) {
 		});
 	});
 
+	it('updates address balances on token transfer', function() {
+	return DexToken.deployed().then(function(instance) {
+		tokenInstance = instance;
+	});
+
+	it('emits Transfer event on transfer function call', function() {
+	return DexToken.deployed().then(function(instance) {
+		tokenInstance = instance;
+	});
+
+
 	it('allows approval of third party for token transfers', function() {
 		return DexToken.deployed().then(function(instance) {
 			tokenInstance = instance;
@@ -81,6 +92,30 @@ contract('DexToken', function(accounts) {
 			assert.equal(allowance, 100, 'stores allowance for third party transfer');
 		});
 	});
+
+	it('emits Approval event on approval function call', function() {
+	return DexToken.deployed().then(function(instance) {
+		tokenInstance = instance;
+	});
+
+
+	it('logs account authorising third party token transfer', function() {
+	return DexToken.deployed().then(function(instance) {
+		tokenInstance = instance;
+	});
+
+
+	it('logs account being authorised for transferFrom function call', function() {
+	return DexToken.deployed().then(function(instance) {
+		tokenInstance = instance;
+	});
+
+
+	it('checks that transfer amount matches authorisation', function() {
+	return DexToken.deployed().then(function(instance) {
+		tokenInstance = instance;
+	});
+
 
 	it('transfers tokens from sender to receiver via approved third party'+
 		' updates balances and allowances, and triggers Transfer event', function() {
